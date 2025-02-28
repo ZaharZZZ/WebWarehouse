@@ -19,6 +19,7 @@ namespace WebWarehouse.Migrations
                     Name = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false)
                 },
                 constraints: table =>
+
                 {
                     table.PrimaryKey("PK_categories", x => x.Id);
                 });
