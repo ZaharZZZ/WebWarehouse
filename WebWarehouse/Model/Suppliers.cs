@@ -7,13 +7,12 @@ namespace WebWarehouse.Model
     {
         public int Id { get; set; }
 
-        public int name_Supplier { get; set; }
+        public int Name { get; set; }
 
         [Required]
         public int ProductId { get; set; }
-
-        [ForeignKey("CategoryId")]
-        public Product product { get; set; }
+        
+        public Product Product { get; set; }
 
         public int Quantity { get; set; }
 

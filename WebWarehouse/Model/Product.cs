@@ -10,15 +10,13 @@ namespace WebWarehouse.Model
 
         [Required]
         public int CategoryId { get; set; }
-
-        [ForeignKey("CategoryId")]
+        
         public Category Category { get; set; }
 
         [Required]
         public int SupportedId { get; set; }
 
-        [ForeignKey("CategoryId")]
-        public Suppliers supplier { get; set; }
+        public Suppliers Supplier { get; set; }
 
         public string Name { get; set; }
 
