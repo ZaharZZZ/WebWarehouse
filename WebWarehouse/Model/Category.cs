@@ -6,7 +6,7 @@ namespace WebWarehouse.Model
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required(ErrorMessage ="Укажите имя катекогии продукта")]
         [StringLength(255)]
         public string Name { get; set; }
 
