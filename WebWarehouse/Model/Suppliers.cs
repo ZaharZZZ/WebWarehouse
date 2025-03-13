@@ -7,11 +7,12 @@ namespace WebWarehouse.Model
     {
         public int Id { get; set; }
 
-        public int Name { get; set; }
+        [Required(ErrorMessage ="Укажите название поставщика")]
+        [StringLength(255)]
+        public string Name { get; set; }
 
-        [Required]
-        public int ProductId { get; set; }
-        
+        [Required(ErrorMessage ="Укажите название продукта")]
+        [StringLength(255)]
         public Product Product { get; set; }
 
         public int Quantity { get; set; }
