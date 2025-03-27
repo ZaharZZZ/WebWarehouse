@@ -14,7 +14,7 @@ namespace WebWarehouse.Data
 
             public DbSet<Category> categories { get; set; } 
             public DbSet<Product> products { get; set; } 
-            public DbSet<Suppliers> suppliers { get; set; } 
+            public DbSet<Сounterparty> suppliers { get; set; } 
             public DbSet<Warehouse> warehouses { get; set; } 
         
     }

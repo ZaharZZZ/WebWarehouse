@@ -16,7 +16,7 @@ namespace WebWarehouse.Model
         [Required(ErrorMessage ="Не введён поставщик")]
         public int SupplierId { get; set; }
 
-        public Suppliers Supplier { get; set; }
+        public Сounterparty Supplier { get; set; }
 
         [Required(ErrorMessage = "Укажите название продукта")]
         [StringLength(255)]
