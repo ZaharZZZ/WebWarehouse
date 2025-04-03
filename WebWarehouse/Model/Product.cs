@@ -8,15 +8,15 @@ namespace WebWarehouse.Model
     {
         public int Id { get; set; }
 
-        [Required(ErrorMessage ="Указана категория продукта")]
-        public int CategoryId { get; set; }
+        //[Required(ErrorMessage ="Указана категория продукта")]
+        //public int CategoryId { get; set; }
         
-        public Category Category { get; set; }
+        //public Category Category { get; set; }
 
-        [Required(ErrorMessage ="Не введён поставщик")]
-        public int SupplierId { get; set; }
-
-        public Сounterparty Supplier { get; set; }
+        //[Required(ErrorMessage ="Не введён поставщик")]
+        //public int SupplierId { get; set; }
+        
+        //public Сounterparty Supplier { get; set; }
 
         [Required(ErrorMessage = "Укажите название продукта")]
         [StringLength(255)]
