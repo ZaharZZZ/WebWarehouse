@@ -4,7 +4,7 @@
 }
 
 <p>
-    <a class="btn btn-primary" href ="@Url.Page("Product",new {Id = 0})"> Add New Product</a>
+    <a class="btn btn-primary" href ="@Url.Page("Product",new {Id = 0})"> Добавить новый товар</a>
 </p>
 
 <div class="row row-cols-1 row-cols-md-3 g-4">
@@ -20,7 +20,7 @@
                 </div>
                 <div class="card-footer d-flex justify-content-between">
                     <a href="@Url.Page("Product", new { id = product.Id })" class="btn btn-warning">Изменить</a>
-                    <a href="javascript:void(0);" class="btn btn-danger" onclick="if (confirm('Are you sure you want to delete?')) { window.location.href = '@Url.Page("ProductDelete", new { id = product.Id })'; }">Удалить</a>
+                    <a href="javascript:void(0);" class="btn btn-danger" onclick="if (confirm('Вы уверены, что хотиет удалить запись?')) { window.location.href = '@Url.Page("ProductDelete", new { id = product.Id })'; }">Удалить</a>
                 </div>
             </div>
         </div>
