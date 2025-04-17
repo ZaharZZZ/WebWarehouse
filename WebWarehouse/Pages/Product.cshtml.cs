@@ -27,6 +27,24 @@ namespace WebWarehouse.Pages
             {
                 Product = new Product() { Id = 0 , Name = "", Price = 0, Quantity = 0};
             }
+
+        }
+        public IActionResult OnPost()
+        {
+            if (!ModelState.IsValid)
+            {
+                return Page();
+            }
+            if (Product.Id == 0)
+            {
+                _context.products.Add(Product);
+            }
+            else
+            {
+                _context.products.Update(Product);
+            }
+            _context.SaveChanges();
+            return RedirectToPage("Products");
         }
     }
 }
