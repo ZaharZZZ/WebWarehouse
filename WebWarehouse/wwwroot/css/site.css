@@ -17,6 +17,24 @@ html {
   min-height: 100%;
 }
 
+
+:root {
+    --bg-color: #fff; /* Светлая тема */
+    --text-color: #000;
+    --header-bg-color: #eee;
+}
+
+.dark-theme {
+    --bg-color: #333; /* Темная тема */
+    --text-color: #fff;
+    --header-bg-color: #222;
+}
+
 body {
-  margin-bottom: 60px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
 }
