@@ -17,7 +17,7 @@ namespace WebWarehouse.Pages
         public List<Product> Products { get; set; }
         public void OnGet()
         {
-
+            Products = _context.products.ToList();
         }
     }
 }
