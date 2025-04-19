@@ -1,4 +1,10 @@
-﻿
+﻿@inject IHttpContextAccessor HttpContextAccessor
+@{
+    var user = HttpContextAccessor.HttpContext?.User;
+    var isAuthenticated = user?.Identity?.IsAuthenticated ?? false;
+    var userName = user?.Identity?.Name ?? "";
+    var isAdmin = user?.IsInRole("Admin") ?? false;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>

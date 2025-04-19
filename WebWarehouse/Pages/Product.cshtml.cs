@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using WebWarehouse.Data;
 using WebWarehouse.Model;
 using System;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebWarehouse.Pages
 {
+    [Authorize]
     public class Product1Model : PageModel
     {
         private readonly ApplicationDbContext _context;
